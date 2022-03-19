@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Product from "./Product/Product";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -8,14 +9,12 @@ const Products = () => {
       .then((data) => setProducts(data));
   }, []);
   return (
-    <div>
-      {products.map((product) => (
-        <div className="row row-cols-3">
-          <div className="col card">
-            <img className="w-50" src={product.image} alt="" />
-          </div>
-        </div>
-      ))}
+    <div className="container mx-auto">
+      <div className="row row-cols-3">
+        {products.map((product) => (
+          <Product product={product} key={product.id}></Product>
+        ))}
+      </div>
     </div>
   );
 };

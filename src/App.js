@@ -6,13 +6,10 @@ import Products from "./components/Products/Products";
 function App() {
   return (
     <div className="App">
-      <div className="container mx-auto mt-4">
+      <div className="container mx-auto my-4">
         <Menubar></Menubar>
       </div>
-
-      <div>
-        <Products></Products>
-      </div>
+      <Products></Products>
     </div>
   );
 }
