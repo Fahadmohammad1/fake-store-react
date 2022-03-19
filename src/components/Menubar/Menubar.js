@@ -1,6 +1,4 @@
-import React from "react";
-
-const Menubar = () => {
+const Menubar = ({ item }) => {
   return (
     <div className="d-flex justify-content-between">
       <h2>Fake Store</h2>
@@ -9,7 +7,7 @@ const Menubar = () => {
           Home
         </a>
         <a href="_" className="ms-5 text-decoration-none fw-bold">
-          Cart
+          Cart<sup>{item}</sup>
         </a>
         <a href="_" className="ms-5 text-decoration-none fw-bold">
           Contact

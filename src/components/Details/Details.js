@@ -21,17 +21,15 @@ const Details = (props) => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>Modal title</Modal.Title>
+            <img className="w-50" src={props.product.image} alt="" />
+            <Modal.Title>{props.product.title}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>
-            I will not close if you click outside me. Don't even try to press
-            escape key.
-          </Modal.Body>
+          <Modal.Body>{props.product.description}</Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary">Understood</Button>
+            <Button variant="primary">OK</Button>
           </Modal.Footer>
         </Modal>
       </>
