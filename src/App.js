@@ -9,7 +9,10 @@ function App() {
       <div className="container mx-auto mt-4">
         <Menubar></Menubar>
       </div>
-      <Products></Products>
+
+      <div>
+        <Products></Products>
+      </div>
     </div>
   );
 }

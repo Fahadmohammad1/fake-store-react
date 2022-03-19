@@ -11,10 +11,8 @@ const Products = () => {
     <div>
       {products.map((product) => (
         <div className="row row-cols-3">
-          <div>
-            <div className="card">
-              <img className="w-50" src={product.image} alt="" />
-            </div>
+          <div className="col card">
+            <img className="w-50" src={product.image} alt="" />
           </div>
         </div>
       ))}
